@@ -9,7 +9,7 @@ BLACK = (0, 0, 0)
 PADDLE_WIDTH, PADDLE_HEIGHT = 20, 100
 BALL_RADIUS = 7
 SCORE_FONT = pygame.font.SysFont("comicsans", 50)
-WINNING_SCORE = 2
+WINNING_SCORE = 5
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong")
@@ -90,7 +90,7 @@ def handle_collision(ball, left_paddle, right_paddle):
         ball.y_vel *= -1
 
     if ball.x_vel < 0:
-        if ball.y >= left_paddle.y and ball.y <= left_paddle.y + left_paddle.height:
+        if left_paddle.y <= ball.y <= left_paddle.y + left_paddle.height:
             if ball.x - ball.radius <= left_paddle.x + left_paddle.width:
                 ball.x_vel *= -1
 
@@ -100,7 +100,7 @@ def handle_collision(ball, left_paddle, right_paddle):
                 y_vel = difference_in_y / reduction_factor
                 ball.y_vel = -1 * y_vel
     else:
-        if ball.y >= right_paddle.y and ball.y <= right_paddle.y + right_paddle.height:
+        if right_paddle.y <= ball.y <= right_paddle.y + right_paddle.height:
             if ball.x + ball.radius >= right_paddle.x:
                 ball.x_vel *= -1
 
@@ -168,7 +168,7 @@ def main():
             text = SCORE_FONT.render(win_text, 1, WHITE)
             WIN.blit(text, (WIDTH // 2 - text.get_width() // 2, HEIGHT // 2 - text.get_height() // 2))
             pygame.display.update()
-            pygame.time.delay(5000)
+            pygame.time.delay(3000)
             ball.reset()
             left_paddle.reset()
             right_paddle.reset()
