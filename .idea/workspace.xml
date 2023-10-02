@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="975809c5-5011-4c77-b2b1-b582cf6bb510" name="Changes" comment="Adds movement to both paddles" />
+    <list default="true" id="975809c5-5011-4c77-b2b1-b582cf6bb510" name="Changes" comment="Splits code">
+      <change afterPath="$PROJECT_DIR$/.idea/Pong.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pong.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +129,31 @@
       <option name="project" value="LOCAL" />
       <updated>1696179665143</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adds movement to both paddles">
+      <option name="closed" value="true" />
+      <created>1696179701181</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696179701181</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Simplifies handle_collision logic">
+      <option name="closed" value="true" />
+      <created>1696180019743</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696180019743</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Splits code">
+      <option name="closed" value="true" />
+      <created>1696218751712</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696218751712</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +172,8 @@
     <MESSAGE value="Creates the window and adds paddles" />
     <MESSAGE value="Implements collision and ball" />
     <MESSAGE value="Adds movement to both paddles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds movement to both paddles" />
+    <MESSAGE value="Simplifies handle_collision logic" />
+    <MESSAGE value="Splits code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splits code" />
   </component>
 </project>
